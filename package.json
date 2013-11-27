@@ -1,0 +1,32 @@
+{
+  "name": "kdhelp",
+  "version": "0.0.1",
+  "description": "Koding Help Tool",
+  "author": "Lee Olayvar <leeolayvar@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "koding",
+    "help"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koding/kdhelp"
+  },
+  "bugs": {
+    "url": "https://github.com/koding/kdhelp/issues"
+  },
+  "scripts": {
+    "prepublish": "./node_modules/grunt-cli/bin/grunt prepublish"
+  },
+  "bin": {
+    "kdhelp": "./build/bin/_kdhelp.js"
+  },
+  "devDependencies": {
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-cli": "~0.1.11",
+    "grunt": "~0.4.2",
+    "grunt-contrib-copy": "~0.4.1"
+  },
+  "dependencies": {}
+}

@@ -95,6 +95,7 @@ suggest = (commands=[], guilty='', threshold=3) ->
   alt_commands  = fs.readdirSync commands.join path.sep
   for potential in alt_commands
     potential = path.basename potential, '.coffee'
+    if potential is 'index' then continue # Don't suggest the index file lol
     if new Levenshtein(guilty, potential).distance <= threshold
       return potential
   return null

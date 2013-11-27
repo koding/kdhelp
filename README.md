@@ -36,12 +36,12 @@ imported. Below is an example object.
 
 ```JSON
 {
-  "home"      : "/home/exampleuser",
-  "username"  : "exampleuser",
-  "hostname"  : "vm-0.exampleuser.koding.kd.io"
-  "vm"        : "vm-0"
-  "userDomain : "exampleuser.kd.io"
-  "vmDomain"  : "vm-0.exampleuser.kd.io"
+  "home"        : "/home/exampleuser",
+  "username"    : "exampleuser",
+  "hostname"    : "vm-0.exampleuser.koding.kd.io",
+  "vm"          : "vm-0",
+  "userDomain"  : "exampleuser.kd.io",
+  "vmDomain"    : "vm-0.exampleuser.kd.io"
 }
 ```
 

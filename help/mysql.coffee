@@ -1,5 +1,6 @@
-
-
+# 
+# # MySQL Help
+#
 module.exports = """
 *** Experimental ***
 

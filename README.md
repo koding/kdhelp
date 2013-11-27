@@ -29,7 +29,35 @@ Logic can be executed to provide dynamic help before the export, such as finding
 the current user name to display the user directory or the login details
 for FTP.
 
-## Disclaimer
+### Userdata
+
+A global object `userdata` is exposed to all Help documents when being
+imported. Below is an example object.
+
+```JSON
+{
+  "home"      : "/home/exampleuser",
+  "username"  : "exampleuser",
+  "hostname"  : "vm-0.exampleuser.koding.kd.io"
+  "vm"        : "vm-0"
+  "userDomain : "exampleuser.kd.io"
+  "vmDomain"  : "vm-0.exampleuser.kd.io"
+}
+```
+
+With the CoffeeScript `"#{userdata.hostname}"` you can access the data. An
+example usage of this is below:
+
+```CoffeeScript
+module.exports = """
+Hello #{userdata.username}!
+
+To view the contents of your /home/#{userdata.home}/Web directory
+visit: #{userdata.vmDomain}
+"""
+```
+
+### Disclaimer
 
 Remember that we are installing this on all user VMs, so the help provided must
 relate to all users, as well as be presented in a way that *all* users will

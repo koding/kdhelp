@@ -21,6 +21,8 @@
 module.exports = """
 *** Experimental ***
 
+Hello #{userdata.username}
+
 Welcome to Koding, This is some message, with a list of commands we have:
 
   Command

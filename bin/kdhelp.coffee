@@ -12,6 +12,7 @@
 # for additional understanding of this point.
 #
 fs          = require 'fs'
+os          = require 'os'
 path        = require 'path'
 Levenshtein = require 'levenshtein'
 
@@ -58,6 +59,7 @@ main = (argv) ->
   # Removing the first two args for the time being, temporary for dev
   commands = [__dirname, '..', 'help'].concat argv[2...]
 
+  global.userdata = userdata() # Expose the userdata
   help = loadHelp commands
   if help?
     print help
@@ -102,9 +104,28 @@ suggest = (commands=[], guilty='', threshold=3) ->
 
 
 
+# ## User Data
+#
+# Evalulate the current context and return varying user data.
+userdata = ->
+  username  = process.env.USER
+  hostname  = os.hostname()
+  vm        = hostname.split('.')[0]
+
+  # Return the data object
+  username    : process.env.HOME
+  username    : username
+  hostname    : hostname
+  vm          : vm
+  userDomain  : "#{username}.kd.io"
+  vmDomain    : "#{vm}.#{username}.kd.io"
+
+
+
 exports.findFault = findFault
 exports.loadHelp  = loadHelp
 exports.main      = main
 exports.print     = print
 exports.suggest   = suggest
+exports.userdata  = userdata
 if require.main is module then main process.argv

@@ -11,7 +11,9 @@
 # no knowledge of how this was implemented. Again, see `../help/index.coffee`
 # for additional understanding of this point.
 #
-path   = require 'path'
+fs          = require 'fs'
+path        = require 'path'
+Levenshtein = require 'levenshtein'
 
 
 
@@ -33,7 +35,7 @@ findFault = (commands=[]) ->
     require.resolve commands.join path.sep
   catch e
     return findFault commands
-  guilty
+  [guilty, suggest commands, guilty]
 
 
 
@@ -54,11 +56,15 @@ loadHelp = (commands=[]) ->
 # Called when this file is executed directly.
 main = (argv) ->
   # Removing the first two args for the time being, temporary for dev
-  commands = ['..', 'help'].concat argv[2...]
+  commands = [__dirname, '..', 'help'].concat argv[2...]
 
   help = loadHelp commands
-  if help? then print help
-  else print "'#{findFault commands}' is not a recognized command"
+  if help?
+    print help
+  else
+    [fault, recommend] = findFault commands
+    print "'#{fault}' is not a recognized command"
+    if recommend? then print "Did you mean '#{recommend}'?"
 
 
 
@@ -78,11 +84,26 @@ print = (msg='', opts={}) ->
   log ''
   log msg
   log ''
-  
+
+
+
+# ## Suggest
+#
+# Suggest an alternate command if the threshold is within an acceptable range.
+# Currently calculating with levenshtein.
+suggest = (commands=[], guilty='', threshold=3) ->
+  alt_commands  = fs.readdirSync commands.join path.sep
+  for potential in alt_commands
+    potential = path.basename potential, '.coffee'
+    if new Levenshtein(guilty, potential).distance <= threshold
+      return potential
+  return null
+
 
 
 exports.findFault = findFault
 exports.loadHelp  = loadHelp
 exports.main      = main
 exports.print     = print
+exports.suggest   = suggest
 if require.main is module then main process.argv

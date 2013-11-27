@@ -76,11 +76,11 @@ main = (argv) ->
 # might be pleasing to the user.
 print = (msg='', opts={}) ->
   opts.logFn    ?= console.error
-  opts.padding  ?= 4
+  opts.padding  ?= 2
 
   if opts.padding?
     pad = new Array(opts.padding+1).join ' '
-    msg = pad + msg.replace '\n', "\n#{pad}"
+    msg = pad + msg.replace /\n/g, "\n#{pad}"
 
   log = opts.logFn
   log ''

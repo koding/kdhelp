@@ -47,7 +47,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-copy'
 
   # Register our tasks. For this project, it's only prepublish.
-  grunt.registerTask 'build',       ['clean', 'coffee', 'copy', 'replace']
+  grunt.registerTask 'build',       ['clean', 'coffee', 'copy']
   grunt.registerTask 'prepublish',  ['build']
   grunt.registerTask 'default',     ['build']
 

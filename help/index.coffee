@@ -19,4 +19,14 @@
 # located at https://github.com/koding/kdhelp
 #
 module.exports = """
+*** Experimental ***
+
+Welcome to Koding, This is some message, with a list of commands we have:
+
+  Command
+  other command
+  foo bar
+  help mysql
+
+And there you have it!
 """

@@ -19,7 +19,8 @@
     "prepublish": "./node_modules/grunt-cli/bin/grunt prepublish"
   },
   "bin": {
-    "kdhelp": "./build/bin/_kdhelp.js"
+    "kdhelp": "./build/bin/_kdhelp.js",
+    "help": "./build/bin/_kdhelp.js"
   },
   "devDependencies": {
     "grunt": "~0.4.2",

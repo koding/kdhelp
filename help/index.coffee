@@ -30,7 +30,6 @@ The following is a list of the current available help topics:
   help sudo             What is my sudo pass?
   help specs            What are my VMs specifications?
   help mysql            Connect to your MySQL Server on Koding
-  help postgresql       Connect to your PostgreSQL on Koding
   help mongodb          Connect to your MongoDB on Koding
   help ftp              Connect to your VM through FTP
 

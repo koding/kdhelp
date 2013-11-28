@@ -1,5 +1,6 @@
-# 0.1.1
+# 0.1.1 / 2013-11-28
 
+ - Added some early drafts for various help topics.
  - Adjusted Suggest to iterate through all of the available choices to produce
   better results.
  - Added Placeholders

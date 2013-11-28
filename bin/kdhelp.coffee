@@ -127,7 +127,7 @@ userdata = ->
   vm        = hostname.split('.')[0]
 
   # Return the data object
-  username    : process.env.HOME
+  home        : process.env.HOME
   username    : username
   hostname    : hostname
   vm          : vm

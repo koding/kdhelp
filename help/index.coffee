@@ -26,11 +26,13 @@ enter. For example, type "help this" and then press enter on your keyboard.
 The following is a list of the current available help topics:
 
   help this             What the heck is this?
-  help ftp              Connect to your VM through FTP
   help programs         What comes pre installed on Koding?
-  help mysql            Connect to MySQL on Koding
-  help postgresql       Connect to PostgreSQL on Koding
-  help mongodb          Connect to MongoDB on Koding
+  help sudo             What is my sudo pass?
+  help specs            What are my VMs specifications?
+  help mysql            Connect to your MySQL Server on Koding
+  help postgresql       Connect to your PostgreSQL on Koding
+  help mongodb          Connect to your MongoDB on Koding
+  help ftp              Connect to your VM through FTP
 
 As always, additional help can be found on Koding University at:
   http://learn.koding.com

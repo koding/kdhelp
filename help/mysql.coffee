@@ -2,11 +2,14 @@
 # # MySQL Help
 #
 module.exports = """
-*** Experimental ***
+MySQL comes preinstalled with the Koding VMs, and can be logged into by typing
+the following command:
 
-This is some mysql help.
+  mysql -uroot
 
-No seriously, this is experimental, no help docs have been written yet.
-Did you know you can type stuff in the console? Easy peasy!
+You should note that the `-p` flag is not included in that command. That is
+because there is no root user password by default.
 
+When entering MySQL login details into your applications, make sure you log in
+from localhost, not your VM Hostname.
 """

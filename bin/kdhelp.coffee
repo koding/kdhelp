@@ -93,14 +93,28 @@ print = (msg='', opts={}) ->
 #
 # Suggest an alternate command if the threshold is within an acceptable range.
 # Currently calculating with levenshtein.
-suggest = (commands=[], guilty='', threshold=3) ->
+suggest = (commands=[], guilty='', minMatch=1, maxMatch=4) ->
   alt_commands  = fs.readdirSync commands.join path.sep
+  match         = null
+  matchDistance = maxMatch += 1
   for potential in alt_commands
-    potential = potential.split('.')[0] # Remove ext
-    if potential is 'index' then continue # Don't suggest the index file lol
-    if new Levenshtein(guilty, potential).distance <= threshold
-      return potential
-  return null
+    # Remove ext
+    potential = potential.split('.')[0]
+    # Don't suggest the index file lol
+    if potential is 'index' then continue
+
+    # Generate our levenshtein
+    lev = new Levenshtein(guilty, potential)
+
+    # We already have better match
+    if lev.distance > matchDistance then continue
+
+    match = potential
+    matchDistance = lev.distance
+    # If match is below minMatch then we can return the result and stop
+    # trying to find better matches
+    if matchDistance <= minMatch then break
+  return match
 
 
 

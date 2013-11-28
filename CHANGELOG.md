@@ -1,5 +1,7 @@
 # 0.1.1
 
+ - Adjusted Suggest to iterate through all of the available choices to produce
+  better results.
  - Added Placeholders
  - Fixed Padding
 

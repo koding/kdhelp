@@ -1,7 +1,7 @@
 # 
 # # This Help
 #
-module.export = """
+module.exports = """
 This is a Terminal, in your Browser. Think of it like a text interface to
 your Virtual Machine, provided by Koding.
 

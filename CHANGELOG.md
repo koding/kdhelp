@@ -1,3 +1,7 @@
+# 0.1.3 / 2013-12-01
+
+- One word typo. Grr
+
 # 0.1.2 / 2013-12-01
 
 - Changed the wording a bit in preparation for going live.

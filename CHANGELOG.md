@@ -1,3 +1,7 @@
+# 0.1.2 / 2013-12-01
+
+- Changed the wording a bit in preparation for going live.
+
 # 0.1.1 / 2013-11-28
 
  - Added some early drafts for various help topics.

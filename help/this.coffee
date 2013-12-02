@@ -15,7 +15,4 @@ press return.
 
 As always, additional help can be found on Koding University at:
   http://learn.koding.com
-
-Or from the Koding community, at:
-  https://koding.com/Activity
 """

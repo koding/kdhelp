@@ -29,9 +29,9 @@ The following is a list of the current available help topics:
   help programs         What comes pre installed on Koding?
   help sudo             What is my sudo pass?
   help specs            What are my VMs specifications?
-  help mysql            Connect to your MySQL Server on Koding
-  help mongodb          Connect to your MongoDB on Koding
-  help ftp              Connect to your VM through FTP
+  help mysql            How can I connect to my MySQL server on Koding
+  help mongodb          How can I to my MongoDB server on Koding
+  help ftp              How can I connect to my VM through FTP
 
 As always, additional help can be found on Koding University at:
   http://learn.koding.com

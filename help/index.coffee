@@ -32,6 +32,7 @@ The following is a list of the current available help topics:
   help mysql            How can I connect to my MySQL server on Koding
   help mongodb          How can I connect to my MongoDB server on Koding
   help ftp              How can I connect to my VM through FTP
+  help phpmyadmin       How do I access phpMyAdmin?
 
 As always, additional help can be found on Koding University at:
   http://learn.koding.com

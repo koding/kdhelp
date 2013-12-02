@@ -1,3 +1,7 @@
+# 0.1.4 / 2013-12-02
+
+- Added phpmyadmin help.
+
 # 0.1.3 / 2013-12-01
 
 - One word typo. Grr

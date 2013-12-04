@@ -52,7 +52,7 @@ example usage of this is below:
 module.exports = """
 Hello #{userdata.username}!
 
-To view the contents of your /home/#{userdata.home}/Web directory
+To view the contents of your #{userdata.home}/Web directory
 visit: #{userdata.vmDomain}
 """
 ```

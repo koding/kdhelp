@@ -13,7 +13,8 @@ The following is a list of all help topics:
   help programs         What comes pre installed on Koding?
   help specs            What are my VMs specifications?
   help sudo             What is my sudo pass?
+  help ssh              How can I SSH into my VM?
   help this             What the heck is this?
   help tos              What are the Terms of Service?
-  help web              How can i view web files?
+  help web              How can I view web files?
 """

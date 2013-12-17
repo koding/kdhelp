@@ -4,6 +4,7 @@
 - Added Mining "Help"
 - Added Privacy and TOS Help
 - Added Help List
+- Added SSH Help Item
 
 # 0.1.4 / 2013-12-02
 

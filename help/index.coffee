@@ -26,12 +26,12 @@ enter. For example, type "help this" and then press enter on your keyboard.
 The following is a list of popular help topics, type "help list" for more:
 
   help this             What the heck is this?
-  help web              How can i view web files?
+  help web              How can I view web files?
   help programs         What comes pre installed on Koding?
   help sudo             What is my sudo pass?
+  help ssh              How can I SSH into my VM?
   help specs            What are my VMs specifications?
   help mysql            How can I connect to my MySQL server on Koding?
-  help mongodb          How can I connect to my MongoDB server on Koding?
   help ftp              How can I connect to my VM through FTP?
   help phpmyadmin       How do I access phpMyAdmin?
   help mining           Can I use Koding for CPU Mining?

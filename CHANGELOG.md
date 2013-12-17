@@ -1,3 +1,8 @@
+# 0.1.5 /
+
+- Added Web Help
+- Added Mining "Help"
+
 # 0.1.4 / 2013-12-02
 
 - Added phpmyadmin help.

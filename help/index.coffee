@@ -23,7 +23,7 @@ Hello #{userdata.username}, to receive help in one of the following areas
 simply type "help " followed by the thing you want help with, and then hit
 enter. For example, type "help this" and then press enter on your keyboard.
 
-The following is a list of the current available help topics:
+The following is a list of popular help topics, type "help list" for more:
 
   help this             What the heck is this?
   help web              How can i view web files?

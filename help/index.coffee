@@ -26,6 +26,7 @@ enter. For example, type "help this" and then press enter on your keyboard.
 The following is a list of the current available help topics:
 
   help this             What the heck is this?
+  help web              How can i view web files?
   help programs         What comes pre installed on Koding?
   help sudo             What is my sudo pass?
   help specs            What are my VMs specifications?

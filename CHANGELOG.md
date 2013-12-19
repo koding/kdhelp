@@ -1,10 +1,11 @@
-# 0.1.5 /
+# 0.1.5 / 2013-12-19
 
 - Added Web Help
 - Added Mining "Help"
 - Added Privacy and TOS Help
 - Added Help List
 - Added SSH Help Item
+- Added Cron Help
 
 # 0.1.4 / 2013-12-02
 

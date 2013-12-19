@@ -4,6 +4,7 @@
 module.exports = """
 The following is a list of all help topics:
 
+  help cron             How do I enable Cron?
   help ftp              How can I connect to my VM through FTP?
   help mining           Can I use Koding for CPU Mining?
   help mongodb          How can I connect to my MongoDB server on Koding?

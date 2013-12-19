@@ -6,6 +6,8 @@
 - Added Help List
 - Added SSH Help Item
 - Added Cron Help
+- Linked to Github for the latest version of Copy. -- Why? Well, copy-mode is
+  important, and it's sort of a mess right now. This is a temporary fix.
 
 # 0.1.4 / 2013-12-02
 

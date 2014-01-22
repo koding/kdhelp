@@ -1,3 +1,7 @@
+# 0.1.6 /
+
+- Added Troubleshoot Framework
+
 # 0.1.5 / 2013-12-19
 
 - Added Web Help

@@ -59,7 +59,8 @@ main = (argv) ->
   # Removing the first two args for the time being, temporary for dev
   commands = [__dirname, '..', 'help'].concat argv[2...]
 
-  global.userdata = userdata() # Expose the userdata
+  global.userdata           = userdata() # Expose the userdata
+  global.userdata.commands  = commands
   help = loadHelp commands
   if help?
     print help

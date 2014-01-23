@@ -1,6 +1,14 @@
 # 0.1.6 /
 
 - Added Troubleshoot Framework
+- Added Async Support for Exports. You can still export a string like normal,
+  but if you export a function it will be called, with the expectation of a
+  it being called back with a string. As an example:
+
+  ```CoffeeScript
+  module.exports = (print) ->
+    setTimeout (-> print 'Some Help'), 1000
+  ```
 
 # 0.1.5 / 2013-12-19
 

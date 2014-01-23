@@ -6,13 +6,31 @@
 # quite large, and that the final print is done by exporting a string, same as
 # the rest of the help commands.
 #
-out = ''
-out += require './apache'
-out += require './mysql'
+# Note that the troubleshoot commands are usually async, because Node does not
+# contain a Sync version of exec and process spawns. As such, this syntax
+# is a little more complicated than the normal string return syntax.
+#
+module.exports = (cb) ->
+  troubleshooterPaths = [
+    './apache'
+    './mysql'
+  ]
 
-if out is ''
-  out = """
-  No problems have been identified with your VM.
-  """
+  out = ''
+  done = ->
+    if out is ''
+      out = """
+      No problems have been identified with your VM.
+      """
+    cb out
 
-module.exports = out
+  do iter = ->
+    ts = troubleshooterPaths.shift()
+    if not ts? then return done()
+    ts = require ts
+    if typeof ts is 'string'
+      out += ts
+      return iter()
+    ts (help) ->
+      out += help
+      iter()

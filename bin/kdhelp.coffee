@@ -59,11 +59,18 @@ main = (argv) ->
   # Removing the first two args for the time being, temporary for dev
   commands = [__dirname, '..', 'help'].concat argv[2...]
 
-  global.userdata           = userdata() # Expose the userdata
-  global.userdata.commands  = commands
-  help = loadHelp commands
-  if help?
-    print help
+  userdata            = getUserdata() # Expose the userdata
+  userdata.commands   = commands
+  global.userdata     = userdata
+  global.utils        =
+    print: print
+
+  helper = loadHelp commands
+  if helper?
+    switch typeof helper
+      when 'string' then print helper
+      when 'function' then helper (help) -> print help
+      else print "Help command failed. Please report this as a bug."
   else
     [fault, recommend] = findFault commands
     print "'#{fault}' is not a recognized command"
@@ -78,15 +85,16 @@ main = (argv) ->
 print = (msg='', opts={}) ->
   opts.logFn    ?= console.error
   opts.padding  ?= 2
+  opts.newLines ?= true
 
   if opts.padding?
     pad = new Array(opts.padding+1).join ' '
     msg = pad + msg.replace /\n/g, "\n#{pad}"
 
   log = opts.logFn
-  log ''
+  log '' if opts.newLines
   log msg
-  log ''
+  log '' if opts.newLines
 
 
 
@@ -122,7 +130,7 @@ suggest = (commands=[], guilty='', minMatch=1, maxMatch=4) ->
 # ## User Data
 #
 # Evalulate the current context and return varying user data.
-userdata = ->
+getUserdata = ->
   username  = process.env.USER
   hostname  = os.hostname()
   vm        = hostname.split('.')[0]
@@ -142,5 +150,5 @@ exports.loadHelp  = loadHelp
 exports.main      = main
 exports.print     = print
 exports.suggest   = suggest
-exports.userdata  = userdata
+exports.getUserdata  = getUserdata
 if require.main is module then main process.argv

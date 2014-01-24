@@ -33,7 +33,7 @@ module.exports = (cb) ->
     else if stdout[0...18] is "Apache2 is running"
       out += """
       Apache Responsed with an unknown status, there may be a problem.
-      Apache Status: "#{stdout}"
+      Apache Status: #{JSON.stringify stdout}
       """
 
     done()

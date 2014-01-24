@@ -30,7 +30,7 @@ module.exports = (cb) ->
       out += """
       Apache does not appear to be running
       """
-    else if stdout[0...18] is "Apache2 is running"
+    else if stdout[0...18] isnt "Apache2 is running"
       out += """
       Apache Responsed with an unknown status, there may be a problem.
       Apache Status: #{JSON.stringify stdout}

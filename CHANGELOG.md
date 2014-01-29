@@ -12,6 +12,8 @@
 - Added apache status checking to troubleshooting.
 - Added MySQL Troubleshooting
 - Added FTPd Troubleshooting
+- Changed `help troubleshoot` to actually provide help on the idea of
+  troubleshooting, and `help troubleshoot all` to execute all troubleshooters.
 
 # 0.1.5 / 2013-12-19
 

@@ -9,7 +9,8 @@
   module.exports = (print) ->
     setTimeout (-> print 'Some Help'), 1000
   ```
-- Added apache status checking to troubleshooting. 
+- Added apache status checking to troubleshooting.
+- Added MySQL Troubleshooting
 
 # 0.1.5 / 2013-12-19
 

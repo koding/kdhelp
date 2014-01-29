@@ -80,9 +80,8 @@ module.exports = (callback) ->
       """
     else callback help
 
-
   # Our little iter function, going through each step
-  do iter = (help) ->
+  do iter = (help=null) ->
     if help?
       steps.pop() help
     else

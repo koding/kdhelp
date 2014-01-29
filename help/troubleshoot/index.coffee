@@ -32,5 +32,5 @@ module.exports = (cb) ->
       out += ts
       return iter()
     ts (help='') ->
-      out += help
+      out += "\n#{help}"
       iter()

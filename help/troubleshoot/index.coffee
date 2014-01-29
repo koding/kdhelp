@@ -31,6 +31,6 @@ module.exports = (cb) ->
     if typeof ts is 'string'
       out += ts
       return iter()
-    ts (help) ->
+    ts (help='') ->
       out += help
       iter()

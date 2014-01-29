@@ -11,6 +11,7 @@
   ```
 - Added apache status checking to troubleshooting.
 - Added MySQL Troubleshooting
+- Added FTPd Troubleshooting
 
 # 0.1.5 / 2013-12-19
 

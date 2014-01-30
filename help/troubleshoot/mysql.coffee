@@ -71,18 +71,19 @@ module.exports = (callback) ->
       """
 
 
-  # The final "done" check
-  steps.push (help) ->
-    # Check if their asking for this help specifically.
-    if userdata.commands[..].pop() is 'mysql' and not help?
-      callback """
+  # Add a "no problems" message if no help has been found, and this command
+  # was executed specifically
+  steps.push (next) ->
+    if userdata.commands[..].pop() is 'mysql'
+      next """
       No problems have been identified with MySQL
       """
-    else callback help
+    else next()
 
   # Our little iter function, going through each step
   do iter = (help=null) ->
-    if help?
-      steps.pop() help
-    else
-      steps.shift() iter
+    step = steps.shift()
+    return callback help  if help?
+    return step iter      if step?
+    callback()
+

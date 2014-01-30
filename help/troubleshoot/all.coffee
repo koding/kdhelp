@@ -23,6 +23,6 @@ module.exports = (cb) ->
     if typeof ts is 'string'
       out += ts
       return iter()
-    ts (help='') ->
-      out += "\n#{help}"
+    ts (help) ->
+      out += "\n#{help}" if help?
       iter()

@@ -34,7 +34,7 @@ module.exports = (callback) ->
       MySQL Status returned an unknown response, which may be a problem itself.
       Response:
 
-        #{stdout}  
+        #{stdout}
       """
 
   # In this command we're simply trying to execute a status message on mysql,

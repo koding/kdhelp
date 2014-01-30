@@ -21,7 +21,7 @@ module.exports = (cb) ->
     if not ts? then return done()
     ts = require ts
     if typeof ts is 'string'
-      out += ts
+      out += "\n#{ts}"
       return iter()
     ts (help) ->
       out += "\n#{help}" if help?

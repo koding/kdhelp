@@ -26,5 +26,5 @@ module.exports = (cb) ->
     ts (help) ->
       if help?
         help  += '\n'         if help[-1..] isnt '\n'
-        out   += "\n#{help}"
+        out   += "\n\n#{help}"
       iter()

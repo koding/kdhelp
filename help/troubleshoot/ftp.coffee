@@ -32,6 +32,7 @@ module.exports = (callback) ->
           Code:     #{err.code}
           Message:  #{err.message}
         """
+    next()
 
   # The final "done" check
   steps.push (help) ->

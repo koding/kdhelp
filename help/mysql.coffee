@@ -8,7 +8,10 @@ the following command:
   mysql -uroot
 
 You should note that the `-p` flag is not included in that command. That is
-because there is no root user password by default.
+because there is no root user password by default. You can assign a password
+with the following command:
+
+  mysqladmin -u root password NEWPASSWORD
 
 When entering MySQL login details into your applications, make sure you log in
 from localhost, not your VM Hostname.

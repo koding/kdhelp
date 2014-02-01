@@ -1,4 +1,4 @@
-# 0.1.6 /
+# 0.1.6 / 2014-01-31
 
 - Added Troubleshoot Framework
 - Added Async Support for Exports. You can still export a string like normal,

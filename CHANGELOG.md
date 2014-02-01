@@ -1,3 +1,9 @@
+# 0.1.7 / 2014-01-31
+
+- NPM Version Fix:
+  npm has a bug with `prepublish` that caused 0.1.6 to not be compiled properly.
+  Incrementing version to resolve this.
+
 # 0.1.6 / 2014-01-31
 
 - Added Troubleshoot Framework

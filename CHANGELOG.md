@@ -15,6 +15,7 @@
 - Changed `help troubleshoot` to actually provide help on the idea of
   troubleshooting, and `help troubleshoot all` to execute all troubleshooters.
 - Added Troubleshoot Alias
+- Added new Disk Size to Specs
 
 # 0.1.5 / 2013-12-19
 

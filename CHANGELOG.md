@@ -1,7 +1,8 @@
-# 0.1.8 /
+# 0.1.8 / 2014-02-01
 
+- Added a slight wording change to `help specs`.
 
-# 0.1.7 / 2014-01-31
+# 0.1.7 / 2014-02-01
 
 - NPM Version Fix:
   npm has a bug with `prepublish` that caused 0.1.6 to not be compiled properly.

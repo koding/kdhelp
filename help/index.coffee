@@ -27,6 +27,7 @@ The following is a list of popular help topics, type "help list" for more:
 
   help this             What the heck is this?
   help troubleshoot     Attempt to identify common problems.
+  help commands         What are some common Linux commands?
   help web              How can I view web files?
   help programs         What comes pre installed on Koding?
   help sudo             What is my sudo pass?

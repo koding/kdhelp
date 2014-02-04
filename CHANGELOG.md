@@ -1,5 +1,7 @@
-# 0.1.9 /
+# 0.1.9 / 2014-02-03
 
+- Added `help commands` and a series of subcommands. Just a basic list of useful
+  commands for users.
 
 # 0.1.8 / 2014-02-01
 

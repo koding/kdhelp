@@ -49,6 +49,7 @@ loadHelp = (commands=[]) ->
   try
     return require commands.join path.sep
   catch e
+    throw e if e.code isnt 'MODULE_NOT_FOUND'
     return null
 
 

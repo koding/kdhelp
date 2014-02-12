@@ -2,6 +2,9 @@
 
 - Added Colors! A bit ugly in the API for the time being unfortunately.
 - Added alias for `commands`.
+- Added error throws for anything other than "Module Not Found". Basically, we
+  were catching all errors and ignoring them, which is obviously not optimal. We
+  now just ignore the module not found error.
 
 # 0.1.9 / 2014-02-03
 

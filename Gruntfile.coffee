@@ -28,6 +28,7 @@ module.exports = (grunt) ->
         src     : [
           'bin/**/*.coffee'
           'help/**/*.coffee'
+          'lib/**/*.coffee'
         ]
 
     # grunt-contrib-copy copies our js file to the bin dir. See the JS file

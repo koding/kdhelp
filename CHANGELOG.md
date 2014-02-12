@@ -1,3 +1,7 @@
+# 0.1.11 / 2014-02-12
+
+- Included Lib into Grunt. Useful eh?
+
 # 0.1.10 / 2014-02-12
 
 - Added Colors! A bit ugly in the API for the time being unfortunately.

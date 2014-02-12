@@ -1,3 +1,7 @@
+# 0.1.12 / 2014-02-12
+
+- Added clear to colors
+
 # 0.1.11 / 2014-02-12
 
 - Included Lib into Grunt. Useful eh?

@@ -14,6 +14,7 @@
 fs          = require 'fs'
 os          = require 'os'
 path        = require 'path'
+{colors}    = require '../lib/colors'
 Levenshtein = require 'levenshtein'
 
 
@@ -69,8 +70,8 @@ main = (argv) ->
   helper = loadHelp commands
   if helper?
     switch typeof helper
-      when 'string' then print helper
-      when 'function' then helper (help) -> print help
+      when 'string' then print helper + colors.clear
+      when 'function' then helper (help) -> print help + colors.clear
       else print "Help command failed. Please report this as a bug."
   else
     [fault, recommend] = findFault commands

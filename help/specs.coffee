@@ -1,6 +1,8 @@
 #
 # # Specs Help
 #
+{c} = require '../lib/colors'
+
 module.exports = """
 The default Koding Virtual Machines come with the following specs:
 
@@ -13,7 +15,7 @@ have referrals, or have taken part in Koding Promotions.
 
 Type the following command to see your storage capacity on this VM:
 
-  df -h
+  #{c.b}df -h#{c.x}
 
 Additional resources will be purchasable from Koding in the near future.
 """

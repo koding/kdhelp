@@ -10,12 +10,15 @@
 # contain a Sync version of exec and process spawns. As such, this syntax
 # is a little more complicated than the normal string return syntax.
 #
+{colors, colorTable} = require '../../lib/colors'
+
 module.exports = """
 This troubleshoot command will analyze your VM for common problems that you may
 be experiencing. Following is a list of troubleshoot commands available:
-
+"""+ colorTable("""
+\n
   help troubleshoot all           Execute all the troubleshoot commands
   help troubleshoot apache        Troubleshoot your Apache Web Server
   help troubleshoot ftp           Troubleshoot your FTP Server
   help troubleshoot mysql         Troubleshoot your MySQL Server
-"""
+""", colors.blue)

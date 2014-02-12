@@ -1,6 +1,7 @@
 #
 # # Troubleshoot MySQL
 #
+{c}    = require '../../lib/colors'
 {exec} = require 'child_process'
 
 module.exports = (callback) ->
@@ -26,7 +27,7 @@ module.exports = (callback) ->
       MySQL does not appear to be running. Try starting it with the following
       command:
 
-        sudo service mysql start
+        #{c.b}sudo service mysql start#{c.x}
       """
 
     else
@@ -67,7 +68,7 @@ module.exports = (callback) ->
       password set. For help setting your MySQL Root Password, please see
       the following command:
 
-        help mysql
+        #{c.b}help mysql#{c.x}
       """
 
 

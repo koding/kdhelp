@@ -1,8 +1,10 @@
 # 
 # # Help Mining
 #
+{c} = require '../lib/colors'
+
 module.exports = """
-CPU Mining is **NOT** allowed on Koding. Doing so will get your account banned,
+CPU Mining is #{c.r}**NOT**#{c.x} allowed on Koding. Doing so will get your account banned,
 and inevitably waste your time. Do not mine on Koding.
 
 Now with that out of the way, you may be asking why we don't allow it?
@@ -15,6 +17,6 @@ resources. Denying them from your fellow Koders.
 This is a free resource that we are offering you. Please don't abuse it.
 
 
-                  Do not mine on Koding.
+                  #{c.r}Do not mine on Koding.
 
 """

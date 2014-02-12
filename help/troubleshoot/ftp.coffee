@@ -1,6 +1,7 @@
 #
 # # Troubleshoot FTP
 #
+{c}    = require '../../lib/colors'
 {exec} = require 'child_process'
 
 module.exports = (callback) ->
@@ -16,13 +17,13 @@ module.exports = (callback) ->
         return next """
           PureFTPd is not installed. To install it, use the following command:
 
-            sudo apt-get install pure-ftpd
+            #{c.b}sudo apt-get install pure-ftpd#{c.x}
         """
       else if stdout is ' * pure-ftpd is not running\n'
         return next """
         PureFTPd is not running. To start the server, use the following command:
 
-          sudo service pure-ftpd start
+          #{c.b}sudo service pure-ftpd start#{c.x}
         """
       else
         return next """

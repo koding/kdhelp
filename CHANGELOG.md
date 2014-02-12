@@ -5,6 +5,7 @@
 - Added error throws for anything other than "Module Not Found". Basically, we
   were catching all errors and ignoring them, which is obviously not optimal. We
   now just ignore the module not found error.
+- Colors, colors everywhere!
 
 # 0.1.9 / 2014-02-03
 

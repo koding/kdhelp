@@ -1,4 +1,4 @@
-# 0.1.10 /
+# 0.1.10 / 2014-02-12
 
 - Added Colors! A bit ugly in the API for the time being unfortunately.
 - Added alias for `commands`.

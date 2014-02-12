@@ -18,13 +18,16 @@
 # For additional help on contributing, please refer to the KDHelp project
 # located at https://github.com/koding/kdhelp
 #
+{c, colors, colorTable} = require '../lib/colors'
+
 module.exports = """
 Hello #{userdata.username}, to receive help in one of the following areas
-simply type "help " followed by the thing you want help with, and then hit
-enter. For example, type "help this" and then press enter on your keyboard.
+simply type "#{c.b}help #{c.x}" followed by the thing you want help with, and then hit
+enter. For example, type "#{c.b}help this#{c.x}" and then press enter on your keyboard.
 
-The following is a list of popular help topics, type "help list" for more:
-
+The following is a list of popular help topics, type "#{c.b}help list#{c.x}" for more:
+"""+ colorTable("""
+\n
   help this             What the heck is this?
   help troubleshoot     Attempt to identify common problems.
   help commands         What are some common Linux commands?
@@ -37,6 +40,7 @@ The following is a list of popular help topics, type "help list" for more:
   help ftp              How can I connect to my VM through FTP?
   help phpmyadmin       How do I access phpMyAdmin?
   help mining           Can I use Koding for CPU Mining?
+""", colors.blue)+  """
 
 As always, additional help can be found on Koding University at:
   http://learn.koding.com

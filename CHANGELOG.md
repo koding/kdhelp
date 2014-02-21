@@ -1,3 +1,7 @@
+# 0.1.13 /
+
+- Added mysql start to `help mysql`
+
 # 0.1.12 / 2014-02-12
 
 - Added clear to colors

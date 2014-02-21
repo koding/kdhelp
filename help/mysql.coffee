@@ -4,8 +4,12 @@
 {c} = require '../lib/colors'
 
 module.exports = """
-MySQL comes preinstalled with the Koding VMs, and can be logged into by typing
+MySQL comes preinstalled with the Koding VMs, but you may have to start it with
 the following command:
+
+  #{c.b}sudo service mysql start#{c.x}
+
+You can login to MySQL with the following command:
 
   #{c.b}mysql -uroot#{c.x}
 

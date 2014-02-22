@@ -8,7 +8,7 @@ module.exports = (callback) ->
   # An array of functions, where each function is a troubleshooting step.
   steps = []
 
-  steps.push (next) -> exec 'service mongo status',
+  steps.push (next) -> exec 'service mongodb status',
     (err, stdout, stderr) ->
       if err?
         return next """

@@ -1,6 +1,7 @@
 # 0.1.13 /
 
 - Added mysql start to `help mysql`
+- Added Troubleshoot for Postgre
 
 # 0.1.12 / 2014-02-12
 

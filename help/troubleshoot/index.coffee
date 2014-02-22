@@ -21,4 +21,6 @@ be experiencing. Following is a list of troubleshoot commands available:
   help troubleshoot apache        Troubleshoot your Apache Web Server
   help troubleshoot ftp           Troubleshoot your FTP Server
   help troubleshoot mysql         Troubleshoot your MySQL Server
+  help troubleshoot postgres      Troubleshoot your PostgreSQL Server
+  help troubleshoot mongo         Troubleshoot your MongoDB Server
 """, colors.blue)

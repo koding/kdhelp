@@ -6,6 +6,7 @@ module.exports = (cb) ->
     './apache'
     './ftp'
     './mysql'
+    './postgresql'
   ]
 
   out = ''

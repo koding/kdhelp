@@ -19,7 +19,7 @@ module.exports = (callback) ->
           Message:  #{err.message}
         """
 
-      if stdout[..19] is 'mongodb start/running'
+      if stdout[..20] is 'mongodb start/running'
         return next()
 
       else if stdout[..-2] is 'mongodb stop/waiting'

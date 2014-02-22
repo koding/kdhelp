@@ -10,7 +10,7 @@ module.exports = (callback) ->
 
   steps.push (next) -> exec 'service postgresql status',
     (err, stdout, stderr) ->
-      if err?
+      if err? and err.code != 3
         return next """
         There was an error checking the status of PostgreSQL. This in itself may
         be a problem. The error message is below:
@@ -19,10 +19,10 @@ module.exports = (callback) ->
           Message:  #{err.message}
         """
 
-      if stdout[-7..-1] is 'online'
+      if stdout[-7..-2] is 'online'
         return next()
 
-      else if stdout[-5..-1] is 'down'
+      else if stdout[-5..-2] is 'down'
         return next """
         PostgreSQL does not appear to be running. Try starting it with the
         following command:

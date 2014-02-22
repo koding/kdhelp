@@ -5,6 +5,7 @@ module.exports = (cb) ->
   troubleshooterPaths = [
     './apache'
     './ftp'
+    './mongo'
     './mysql'
     './postgresql'
   ]

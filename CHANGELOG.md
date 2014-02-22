@@ -2,6 +2,7 @@
 
 - Added mysql start to `help mysql`
 - Added Troubleshoot for Postgre
+- Added Troubleshoot for mongodb startup
 
 # 0.1.12 / 2014-02-12
 

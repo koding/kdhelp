@@ -20,7 +20,7 @@ be experiencing. Following is a list of troubleshoot commands available:
   help troubleshoot all           Execute all the troubleshoot commands
   help troubleshoot apache        Troubleshoot your Apache Web Server
   help troubleshoot ftp           Troubleshoot your FTP Server
-  help troubleshoot mysql         Troubleshoot your MySQL Server
-  help troubleshoot postgres      Troubleshoot your PostgreSQL Server
   help troubleshoot mongo         Troubleshoot your MongoDB Server
+  help troubleshoot mysql         Troubleshoot your MySQL Server
+  help troubleshoot postgresql    Troubleshoot your PostgreSQL Server
 """, colors.blue)
